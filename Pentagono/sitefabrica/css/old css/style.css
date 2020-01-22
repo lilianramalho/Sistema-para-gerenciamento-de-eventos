@@ -1,0 +1,158 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	font-family: 'Roboto', sans-serif; 
+}
+
+.container{
+	height: 768px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-content: space-around;
+	justify-content: center;
+}
+
+#secao-01{
+	background: url(images/torre.jpg) no-repeat;
+	background-size: cover; 
+}
+
+#secao-02{
+	background-color: green;
+}
+
+.items{
+	display: flex;
+	flex-direction: column;
+}
+
+.item{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-weight: bolder;
+	font-size: 100px;
+
+	color: #fff;
+	padding: 5px;
+	margin: 5px;
+	width: auto;
+	height: auto;
+	z-index: 2;
+}
+
+.item2{
+	display: flex;
+	justify-content: center;
+	font-weight: bolder;
+	font-size: 24px;
+
+	color: #fff;
+	padding: 5px;
+	margin: 10px;
+	width: 80%;
+	height: auto;
+	z-index: 2;
+}
+
+@media screen and (max-width: 599px) {
+	#secao-01{
+		background-color: blue;
+	}
+	.item{
+		font-size: 35px;
+	}
+	.item2{
+		font-size: 10px;
+	}
+}
+
+@media screen and (min-width: 600px) {
+	#secao-01{
+		background-color: orange;
+	}
+	.item{
+		font-size: 50px;
+	}
+	.item2{
+		font-size: 12px;
+	}
+}
+
+@media screen and (min-width: 900px) {
+	#secao-01{
+		background-color: violet;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	#secao-01{
+		background-color: black;
+	}
+	.item{
+		font-size: 100px;
+	}
+	.item2{
+		font-size: 24px;
+	}
+}
+
+@media screen and (min-width: 1800px) {
+	#secao-01{
+		background-color: yellow;
+	}
+	.item{
+		font-size: 100px;
+	}
+	.item2{
+		font-size: 24px;
+	}
+}
+.parent{
+	height: 60px;
+	background-color: #fff;
+	color: #707070;
+	position: fixed;
+
+	top: 0;
+	left: 0;
+	margin: auto;
+	width: 100%;
+
+	z-index: 9999;
+}
+nav a{
+	color: #707070;
+	text-decoration: none;
+}
+nav ul{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	align-content: space-around;
+	justify-content: space-around;
+
+	list-style: none;
+	text-decoration: none;	
+}
+
+nav li{
+	display: flex;
+	height: 60px;
+	align-items: center;
+}
+
+
+.bg_video{
+	position: absolute;
+	right: 0; 
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	width: auto; 
+	height: auto;
+	opacity: 0.5;
+	z-index: 1;
+}

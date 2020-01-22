@@ -1,0 +1,429 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	font-family: 'Roboto', sans-serif; 
+}
+
+.parent{
+	height: 60px;
+	background-color: #fff;
+	color: #707070;
+	position: fixed;
+
+	top: 0;
+	left: 0;
+	margin: auto;
+	width: 100%;
+
+	z-index: 9999;
+	box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+}
+nav a{
+	color: #707070;
+	text-decoration: none;
+}
+nav ul{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	align-content: space-around;
+	justify-content: space-around;
+
+	list-style: none;
+	text-decoration: none;	
+}
+
+nav li{
+	display: flex;
+	height: 60px;
+	align-items: center;
+}
+
+
+.container{
+	height: 100vh;
+}
+
+.container_header{
+	padding: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	height: auto;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+	align-content: flex-start;
+	justify-content: space-around;
+	position: relative;
+}
+
+.section_headline{
+	font-weight: bolder;
+	margin-top: 0px;
+	color: #303030;
+	float: left;
+    width: 100%;
+    max-width: 1260px;
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+	text-shadow: 0px 3px #e95771;
+    font-size: 80px;
+}
+
+.section_headline-2{
+	font-weight: bolder;
+	margin-top: 50px;
+	color: #fff;
+	float: left;
+    width: 100%;
+    max-width: 1260px;
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+	text-shadow: 0px 3px #303030;
+    font-size: 80px;
+}
+
+.section_subheading{
+	font-weight: normal;
+	color: #303030;
+	float: left;
+    width: 100%;
+    max-width: 1260px;
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+    text-shadow: 0px 2px #e95771;
+    font-size: 30px;
+}
+
+.section_subheading-2{
+	font-weight: normal;
+	color: #fff;
+	float: left;
+    width: 100%;
+    max-width: 1260px;
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+    text-shadow: 0px 2px #303030;
+    font-size: 30px;
+}
+
+
+.section_content{
+	margin-left: auto;
+	margin-right: auto;
+	overflow-y: hidden;
+}
+
+#secao-01{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	background-color: black;
+	background-image: url('../imagens/degrad.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.item{
+	text-align: center;
+	font-weight: bolder;
+	font-size: 100px;
+	color: #fff;
+	padding: 5px;
+	margin: 5px;
+	width: 1366px;
+	height: 768px;
+	z-index: 2;
+	background-image: url('../imagens/titulo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+	/* text-shadow: 0px 3px #e95771; */
+	/*filter: drop-shadow(-3px -3px 0px #ffd200);*/
+}
+
+.item2{
+	font-weight: bolder;
+	font-size: 24px;
+	text-align: center;
+	color: #fff;
+	padding: 5px;
+	margin: 10px;
+	width: auto;
+	height: auto;
+	z-index: 2;
+	/*text-shadow: 0px 3px #e95771;*/
+}
+
+
+#secao-02{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-around;
+	background-color: #fff;
+	flex-wrap: wrap;
+	overflow: hidden;
+}
+
+.slider{
+	height: 420px;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-content: space-around;
+	align-items: center;
+	flex-wrap: nowrap;
+	overflow-x: hidden;
+}
+
+.slider_content{
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+	width: auto;
+	height: 400px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.slider_stroke{
+	border: 2px solid #ffd200;
+	width: 290px;
+	height: 390px;
+	margin-left: -10px;
+	margin-top: -10px;
+	position: absolute;
+	z-index: 4;
+}
+
+.slider_content_item{
+	cursor: pointer;
+	display: flex;
+	background-color: #DDD;
+	width: 290px;
+	height: 390px;
+	margin-left: 10px;
+	margin-right: 10px;
+	box-shadow: 5px 5px 0px #e95771;
+	transition: .5s;
+}
+
+.slider_descricao{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-items: flex-start;
+	justify-content: flex-start;
+	align-self: flex-end;
+	position: absolute;
+	z-index: 9999;
+	transition: .5s;
+	z-index: 3;
+	height: 80px;
+	width: 270px;
+	background-color: rgba(0, 0, 0, 0.4);
+	color: #fff;
+	padding: 10px;
+	text-align: justify;
+	overflow: hidden;
+}
+
+.slider_headline{
+	color: #fff;
+	font-size: 18px;
+	font-weight: bolder;
+	text-align: justify;
+	position: relative;
+}
+
+.slider_text{
+	height: 70px;
+	margin-top: 5px;
+	color: #fff;
+	font-size: 12px;
+	font-weight: normal;
+	text-align: justify;
+	position: relative;
+	overflow: hidden;
+	transition: 0.5s;
+}
+
+.slider_mais_info{
+	font-size: 0px;
+	top: 50px;
+	align-self: center;
+	background-color: #e95771;
+	width: 0px;
+	height: 0px;
+	border-radius: 100px;
+	position: relative;
+	text-align: center;
+	color: rgba(0, 0, 0, 0.0);
+	transition: 0.5s;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-transform: uppercase;
+	font-weight: lighter;
+}
+
+.slider_content_item:hover .slider_mais_info{
+	font-size: 15px;
+	transition: 0.5s;
+	width: 100px;
+	height: 100px;
+	color: #ffd200;
+}
+
+.slider_content_item:hover .slider_text{
+	overflow: hidden;
+	height: 150px;
+	transition: 0.5s;
+}
+
+.slider_content_item:hover .slider_descricao{
+	transition: .5s;
+	height: 370px;
+	width: 270px;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.slider_content_item_img-1{
+	transition: .5s;
+	z-index: 4;
+	background-image: url('http://www.fabricadecultura.org.br/arquivos/Galerias_Itens_G_279.JPG');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: .5s;
+}
+
+.slider_content_item_img-2{
+	transition: .5s;
+	z-index: 4;
+	background-image: url('http://www.fabricadecultura.org.br/arquivos/Galerias_Itens_G_276.JPG');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: .5s;
+}
+
+#secao-03{
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: space-around;
+	background-color: #e95771;
+	flex-wrap: wrap;
+	overflow: hidden;
+
+/* 	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	background-color: #e95771;
+	flex-wrap: wrap; */
+}
+
+.descricao{
+	padding: 5px;
+	width: 250px;
+	font-size: 20px;
+	font-weight: normal;
+	text-align: justify;
+    text-justify: inter-word;
+	color: #fff;
+	position: relative;
+}
+
+.central{
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+	width: 2000px;
+	height: 545px;
+}
+
+.esquerda{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	width: 50%;
+	height: 100%;
+	align-self: flex-start;
+}
+
+.direita{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	width: 50%;
+	height: 100%;
+	align-self: flex-end;
+}
+
+.calendario{
+	width: 768px;
+	height: 768px;
+	margin-top: -112px;
+	position: absolute;
+	align-self: flex-end;
+	background-image: url('../imagens/calendario.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.agendar_button{
+	cursor: pointer;
+	padding: 20px;
+	background-color: #fff;
+	color: #e95771;
+	font-size: 20px;
+	font-weight: lighter;
+	text-align: center;
+	position: relative;
+}
+
+.agendar_button a{
+	text-decoration: none;
+	color: #e95771;
+}
+
+.bg_video{
+	position: absolute;
+	right: 0; 
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	width: auto; 
+	height: auto;
+	opacity: 0.5;
+	z-index: 1;
+}
+
+#secao-04{
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: space-around;
+	background-color: #fff;
+	flex-wrap: wrap;
+	overflow: hidden;
+}

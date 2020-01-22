@@ -1,0 +1,68 @@
+/*
+
+	INSTRUCTIONS ---------------------------------------------------------------------------------
+  
+  1. link this stylesheet in the head of your HTML
+  	 <link href="YOUR PATH/calendario-tcc.css" rel="stylesheet" type="text/css" />
+     
+  2. Set the file name as data-theme attribute on your input
+  	 <input data-theme="calendario-tcc" />
+     
+  3. That's it!
+  
+  When you run script the style will be automatically applied.
+
+*/
+div.datedropper.calendario-tcc {
+  border-radius: 3px;
+  width: 200px;
+}
+div.datedropper.calendario-tcc .picker {
+  border-radius: 3px;
+  box-shadow: 0 0 45px 0px rgba(0, 0, 0, 0.16);
+}
+div.datedropper.calendario-tcc .pick-l {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+div.datedropper.calendario-tcc:before,
+div.datedropper.calendario-tcc .pick-submit,
+div.datedropper.calendario-tcc .pick-lg-b .pick-sl:before,
+div.datedropper.calendario-tcc .pick-m,
+div.datedropper.calendario-tcc .pick-lg-h {
+  background-color: #e0074e;
+}
+div.datedropper.calendario-tcc .pick-y.pick-jump,
+div.datedropper.calendario-tcc .pick li span,
+div.datedropper.calendario-tcc .pick-lg-b .pick-wke,
+div.datedropper.calendario-tcc .pick-btn {
+  color: #e0074e;
+}
+div.datedropper.calendario-tcc .picker,
+div.datedropper.calendario-tcc .pick-l {
+  background-color: #FFF;
+}
+div.datedropper.calendario-tcc .picker,
+div.datedropper.calendario-tcc .pick-arw,
+div.datedropper.calendario-tcc .pick-l {
+  color: #e0074e;
+}
+div.datedropper.calendario-tcc .pick-m,
+div.datedropper.calendario-tcc .pick-m .pick-arw,
+div.datedropper.calendario-tcc .pick-lg-h,
+div.datedropper.calendario-tcc .pick-lg-b .pick-sl,
+div.datedropper.calendario-tcc .pick-submit {
+  color: #FFF;
+}
+div.datedropper.calendario-tcc.picker-tiny:before,
+div.datedropper.calendario-tcc.picker-tiny .pick-m {
+  background-color: #FFF;
+}
+div.datedropper.calendario-tcc.picker-tiny .pick-m,
+div.datedropper.calendario-tcc.picker-tiny .pick-m .pick-arw {
+  color: #e0074e;
+}
+div.datedropper.calendario-tcc.picker-lkd .pick-submit {
+  background-color: #FFF;
+  color: #e0074e;
+}

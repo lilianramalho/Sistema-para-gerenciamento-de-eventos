@@ -1,0 +1,367 @@
+.menuHamburguer{
+	width: 40px;
+	height: 40px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	z-index: 99999;
+}
+
+@media (min-width: 1024px){
+	.menuHamburguer{
+		display: none;
+	}	
+}
+
+.hamburguerBar{
+	width: 60%;
+	height: 2px;
+	margin: 3px;
+	background-color: #303030;
+}
+
+.hamburguerIcon{
+	color: #fff;
+	font-size: 2em;
+}
+
+.parent{
+	height: 100px;
+	background-color: rgba(253, 121, 168,1.0);
+	color: rgba(255, 255, 255, 1.0);
+	text-transform: uppercase;
+	font-size: 13px;
+	font-weight: 700;
+	position: fixed;
+	top: 0;
+	left: 0;
+	margin: auto;
+	width: 0%;
+	height: 100%;
+	z-index: 9999;
+	transition: 0.1s ease-in-out;
+	display: block;
+	overflow: hidden;
+}
+
+
+@media (min-width: 1024px){
+	.parent{
+		height: 100px;
+		background-color: rgba(0, 0, 0, 0.0);
+		color: #fff;
+		text-transform: uppercase;
+		font-size: 13px;
+		font-weight: 700;
+		position: fixed;
+		top: 0;
+		left: 0;
+		margin: auto;
+		width: 100%;
+		z-index: 9999;
+		transition: 0.1s ease-in-out;
+		display: block;
+	}
+}
+
+.parent2{
+	height: 100px;
+	background-color: rgba(253, 121, 168,1.0);
+	color: rgba(255, 255, 255, 1.0);
+	text-transform: uppercase;
+	font-size: 13px;
+	font-weight: 700;
+	position: fixed;
+	top: 0;
+	left: 0;
+	margin: auto;
+	width: 0%;
+	height: 100%;
+	z-index: 9999;
+	transition: 0.1s ease-in-out;
+	display: block;
+	overflow: hidden;
+}
+
+
+@media (min-width: 1024px){
+	.parent2{
+		height: 70px;
+		background-color: rgba(253, 121, 168,1.0);
+		color: rgba(255, 255, 255, 1.0);
+		text-transform: uppercase;
+		font-size: 13px;
+		font-weight: 700;
+		position: fixed;
+		top: 0;
+		left: 0;
+		margin: auto;
+		width: 100%;
+		z-index: 9999;
+		box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+		transition: 0.1s ease-in-out;
+	}
+}
+
+.botaoLogin{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	background-color: transparent;
+	font-size: 15px;
+	color: rgba(255, 255, 255, 1.0);
+	width: 100%;
+	height: 30px;
+	padding: 5px 10px 5px 10px;
+	margin: 10px;
+	transition: all .2s;
+}
+
+@media (min-width: 1024px){
+	.botaoLogin{
+		-webkit-touch-callout: none;  /* iPhone OS, Safari */
+		-webkit-user-select: none;    /* Chrome, Safari 3 */
+		-khtml-user-select: none;     /* Safari 2 */
+		-moz-user-select: none;       /* Firefox */
+		-ms-user-select: none;        /* IE10+ */
+		user-select: none;            /* Possível implementação no futuro */
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+		align-self: center;
+		width: 100px;
+		padding-left: 10px;
+		padding-right: 10px;
+		color: rgba(253, 121, 168,1.0);
+		background-color: rgba(255, 255, 255, 1.0);
+		border: 1px solid rgba(255, 255, 255, 1.0);
+		font-size: 12px;
+		border-radius: 50px;
+		text-decoration: none;
+		z-index: 3;
+	}
+}
+
+.botaoLogin:hover{
+
+}
+
+@media (min-width: 1024px) {
+	.botaoLogin:hover{
+		box-shadow: 0px 0px 7px 5px rgba(255,255,255,0.2);
+		color: #303030;
+	}
+}
+
+
+.containerBotaoLogin{
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	flex-direction: column;
+}
+
+@media (min-width: 1024px) {
+
+	.containerBotaoLogin{
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		flex-direction: row;
+	}
+	
+}
+
+.nav_left{
+	display: flex;
+	width: 50%;
+	height: 100%;
+	flex-direction: column;
+	position: relative;
+	align-items: center;
+	justify-content: space-around;
+}
+
+@media (min-width: 1024px){
+	.nav_left{
+		display: flex;
+		width: 50%;
+		height: 100%;
+		flex-direction: row;
+		position: relative;
+		align-items: center;
+		justify-content: space-around;
+	}
+}
+
+.nav_right{
+	display: flex;
+	width: auto;
+	float: left;
+	padding: 0 20px 0 20px;
+	height: 100%;
+	flex-direction: column;
+	position: relative;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+@media (min-width: 1024px){
+	.nav_right{
+		display: flex;
+		width: auto;
+		float: left;
+		padding: 0 20px 0 20px;
+		height: 100%;
+		position: relative;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+nav{
+	height: 100%;
+}
+
+nav a{
+	text-decoration: none;
+	transition: 0.3s ease-in-out;
+}
+
+nav ul{
+	display: flex;
+	flex-direction: column;
+	height: auto;
+	align-items: center;
+	align-content: space-around;
+	justify-content: space-between;
+	list-style: none;
+	text-decoration: none;
+}
+
+@media (min-width: 1024px) {
+	nav ul{
+		height: 100%;
+		flex-direction: row;
+		align-items: center;
+	}
+}
+
+nav li a{
+	cursor: pointer;
+	color: rgba(255, 255, 255, 1.0);
+	display: flex;
+	width: 100%;
+	height: auto;
+	padding: 5px;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	transition: 0.1s;
+}
+
+@media (min-width: 1024px) {
+	nav li a{
+		cursor: pointer;
+		color: #fff;
+		display: flex;
+		width: auto;
+		height: 100%;
+		padding: 0 10px 0 10px;
+		align-items: center;
+		position: relative;
+		transition: 0.1s;
+	}
+
+}
+
+.parent nav li a:hover{
+	color: rgba(253, 121, 168,1.0);
+	transition: 0.1s all ease-in-out;
+}
+
+.parent2 nav li a:hover{
+	color: rgba(51, 51, 51,1.0);
+	transition: 0.1s all ease-in-out;
+}
+
+.logo_nav{
+	background-image: url('../imagens/elementos/logo-branco.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	width: 90px;
+	height: 59px;
+
+}
+
+@media (min-width: 1024px) {
+	.logo_nav{
+		background-image: url('../imagens/elementos/logo-branco.png');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: relative;
+		width: 90px;
+		height: 59px;
+	}
+}
+
+.logo_nav2{
+	background-image: url('../imagens/elementos/logo-branco.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	width: 90px;
+	height: 59px;
+}
+
+
+.navOpcoes{
+	width: 100%;
+	height: 110px;
+	position: fixed;
+	z-index: 9998;
+	box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+	background-color: #F5F6FA;
+}
+
+.opcoes{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.inputOpcoes{
+	width: 220px;
+	height: 40px;
+	background-color: #fff;
+	border: 1px solid rgba(189, 195, 199,1.0);
+	border-radius: 50px;
+	display: flex;
+	padding: 0 10px 0 10px;
+	box-sizing: border-box;
+	align-items: center;
+	justify-content: flex-end;
+	text-align: center;
+	overflow: hidden;
+	color: rgba(51, 51, 51, 0.5);
+	margin: 0 0 5px 20px;
+}
+
+.inputOpcoes input{
+	background-color: #fff;
+	height: 100%;
+	width: 100%;
+	border: none;
+	margin-right: 5px;
+	color: rgba(51, 51, 51, 1.0);
+}
